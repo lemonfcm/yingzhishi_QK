@@ -1,0 +1,561 @@
+@import "_reset.less";
+@import "_common.less";
+
+.clearfix { }
+
+.clearfix:after {
+    content: '.';
+    display: block;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
+}
+
+.hide {
+  display: none;
+}
+a.btn {
+  display: block;
+}
+
+.posa {
+  position: absolute;
+}
+.posf {
+  position: fixed;
+}
+.posr {
+  position: relative;
+}
+
+body {
+    background-color: #1c1b19;
+    font-size: 0.24rem;
+}
+
+* {
+  background-size: 100% 100% !important;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+
+    .topBar{
+	  position: fixed;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  height: 1rem;
+	  z-index: 200;
+	  background: url(../img/header_bg.png) no-repeat 0 0;
+	  img{
+	      float: left;
+	      margin-left: 0.15rem;
+	      margin-top: 0.08rem;
+	  }
+	  .headerIcon{
+	    width: 0.8rem;
+	    height:0.8rem;
+	  }
+	  .headerTxt{
+	    width: 2.63rem;
+	    height:0.71rem;
+	    margin-top: 0.14rem;
+	  }
+	  .topDownload{
+	    float: right;
+	    width: 1.53rem;
+	    height:0.74rem;
+	    margin-right: 0.35rem;
+	    margin-top: 0.15rem;
+	    background: url(../img/download_game.png) no-repeat center;
+	  }
+	    .topMenu{
+	      float: right;
+	      margin-right: 0.25rem;
+	      margin-top:0.15rem;
+	      width: 0.95rem;
+	      height:0.74rem;
+	      background: url(../img/menu.png) no-repeat center;
+	    }
+	    .topMenu_hover{
+	       background: url(../img/menu_hv.png) no-repeat center;
+	    }
+	}
+	.menuWrapper{
+	  width: 100%;
+	  height: 100%;
+	  background: url(../img/menu_bg.png);
+	  z-index: 100;
+	  visibility: hidden; 
+	  .animation(all 0.5s ease-in-out);
+	  .menus{
+	    //top:1rem;
+	    width: 100%;
+	    .menuItem{
+	      box-sizing: border-box;
+	      width: 50%;
+	      height: 1.3rem;
+	      position: relative;
+	      float: left;
+	      border-bottom: 1px solid #dbd9d9;
+	      &:nth-child(odd){
+	      border-right: 1px solid #dbd9d9;
+	      }
+	      &:nth-child(even){
+	      margin-left: -0.01rem; 
+	      }
+
+	      &::after{
+	        position: absolute;
+	        width: 0.42rem;
+	        height: 0.3rem;
+	        content:"";
+	        background: url(../img/zuanshi.png) no-repeat center;
+	        background-size: 100% 100% !important;
+	        right: 0.15rem;
+	        top:50%;
+	        margin-top: -0.15rem;
+	      }
+
+	      .menuA{
+	        position: relative;
+	        display: block;
+	        width: 0.84rem;
+	        height:0.48rem;
+	        background: url(../img/menu_sy.png) no-repeat top center;
+	        left:0.75rem;
+	        top:50%;
+	        margin-top:-0.24rem;         
+	        &.menuA2{
+	           background: url(../img/menu_zx.png) no-repeat top center;
+	        }
+	        &.menuA3{
+	          width: 1.28rem;
+	          background: url(../img/menu_sjg.png) no-repeat top center;
+	        }
+	        &.menuA4{
+	          width: 1.72rem;
+	          background: url(../img/menu_zjjs.png) no-repeat top center;
+	        }
+	        &.menuA5{
+	          width: 1.72rem;
+	          background: url(../img/menu_yxts.png) no-repeat top center;
+	        }
+	        &.menuA6{
+	          width: 1.72rem;
+	          background: url(../img/menu_yxdm.png) no-repeat top center;
+	        }
+	        &.menuA7{
+	          width: 1.96rem;
+	          height: 0.74rem;
+	          margin-top:-0.37rem;
+	          margin-left: -0.1rem;   
+	          background: url(../img/menu_zxkb_hv.png) no-repeat top center;
+	        }
+	        &.menuA8{
+	          width: 1.3rem;
+	          background: url(../img/menu_gzh.png) no-repeat top center;
+	        }
+	      }
+
+	      .menu_wx,.menu_xl{
+	        display: block;
+	        width: 0.42rem;
+	        height: 0.45rem;
+	        background: url(../img/menu_weixin.png) no-repeat center;
+	        top:50%;
+	        margin-top: -0.225rem;
+	        right: 1.2rem;
+	      }
+	      .menu_xl{
+	        background: url(../img/menu_xinlang.png) no-repeat center;
+	        right: 0.65rem;
+	      }
+	    }
+	  }
+	}
+
+	.main{
+	  background-color:#000;
+	  width: 100%;
+	  margin-top: 1rem;
+	  .main1{
+	  	box-sizing: border-box;
+	  	width: 7.5rem;
+	  	height: 11.07rem;
+	  	background: url(../img/影之诗bg1.png) no-repeat top center;
+	  	margin: 0 auto ; 
+	  	padding-top: 5.5rem;
+	  	.main1_js{
+	  		color:#fff;
+	  		font-size: 0.24rem;
+	  		box-sizing: border-box;
+	  		width: 6.9rem;
+	  		height: 5rem;
+	  		line-height: 0.45rem;
+	  		margin: 0 auto ;
+	  		padding: 0 0.5rem 0 0.5rem;
+  		 	overflow-y: auto; 
+          	z-index: 100;
+	  		.main1_txt{
+	  			margin-top: 0.5rem;
+	  		}
+	  	}
+	  }
+	  .main2{
+	  	width: 7.5rem;
+	  	box-sizing: border-box;
+	  	height: 12.05rem;  
+	  	margin: 0 auto;
+	  	padding-top: 0.3rem;
+	  	background: url(../img/bg2.png) no-repeat top center;
+		.video{
+			width: 5.93rem;
+			height: 3.44rem;
+			margin: 0 auto 0;
+			background: url(../img/video.png) no-repeat top center;
+	  	}
+	  	.kpjsTxt{
+	  		color:#a3a3a4;
+	  		text-align: center;
+	  		margin-top: 2rem;
+	  	}
+	  	.kpjsPic{                                                                                                                                                                                                             
+	  		width: 5.55rem;
+	  		margin: 0 auto ;
+	  		font-size: 0;
+	  		margin-top: 0.3rem;
+	  		.jsfl{
+	  			float: left;
+	  			margin: 0.25rem 0.09rem 0 ;
+	  			color:#e1e1e1;
+	  			.jsflPic{
+	  				display: block;
+	  				width: 1.67rem;
+	  				height: 1.12rem;
+	  				&.jsflPic1{
+	  					background:url(../img/elf.png) no-repeat top center; 
+	  				}
+	  				&.jsflPic2{
+	  					background:url(../img/royal.png) no-repeat top center; 
+	  				}
+	  				&.jsflPic3{
+	  					background:url(../img/witch.png) no-repeat top center; 
+	  				}
+	  				&.jsflPic4{
+	  					background:url(../img/dragon.png) no-repeat top center; 
+	  				}
+	  				&.jsflPic5{
+	  					background:url(../img/necromancer.png) no-repeat top center; 
+	  				}
+	  				&.jsflPic6{
+	  					background:url(../img/vampire.png) no-repeat top center; 
+	  				}
+	  				&.jsflPic7{
+	  					background:url(../img/bishop.png) no-repeat top center; 
+	  				}
+	  				&.jsflPic8{
+	  					background:url(../img/nemesis.png) no-repeat top center; 
+	  				}
+	  				&.jsflPic9{
+	  					background:url(../img/neutral.png) no-repeat top center; 
+	  				}
+
+	  			}
+	  			.jsflTxt{
+	  				font-size: 0.24rem;
+	  				margin-top: 0.15rem;
+	  				text-align: center;
+	  			}
+	  		}
+	  	}
+	  }
+	  .main3{
+	  	width: 7.5rem;
+	  	margin: 0.4rem auto 0;
+	  	.part{
+	  		width: 100%;
+	  		margin-bottom: 0.6rem;
+	  		.partTit{
+	  			height: 0.62rem;
+	  			margin-left: 0.4rem;
+	  			margin-bottom: 0.35rem;
+	  		}
+	  		.swiper-container {
+			      width:100%;
+			      height:5.45rem;
+			      /* .swiper-wrapper{
+			      	margin-left: 0.15rem;
+			      } */
+			    .swiper-slide {
+			      text-align:center;
+			      font-size:0.24rem;
+			      display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;
+			      -webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;
+			      -webkit-box-align:center;-ms-flex-align:center;
+			      a {
+			        display: block;
+			        width: 3.3rem;
+			        height: 4.4rem;
+			        img {
+			          display: block;
+			          width: 100%;
+			          height: 100%;
+			        }
+			        p{
+			        	text-align: left;
+			        	padding-left: 0.3rem;
+			        	&.swiper-txt1{
+			        		margin: 0.3rem 0 0.15rem;
+			        		color:#ccb38d;
+			        	}
+			        	&.swiper-txt2{
+			        		color:#cfcfcf;
+			        	}
+			        }
+
+			        
+			      }
+			    }
+
+			    .swiper-button-prev {
+			      width: .47rem;
+			      height: 1.22rem;
+			      background: url(../img/arrow-left.png) no-repeat;
+			      left:0;
+			      margin-top: -1.05rem;
+			    }
+			    .swiper-button-next {
+			      width: .47rem;
+			      height: 1.22rem;
+			      background: url(../img/arrow-right.png) no-repeat;
+			      right:0;
+			      margin-top: -1.05rem;
+			    }
+			    .swiper-button-disabled{
+			    	opacity: 0;
+			    }
+		   }
+
+		   &.part1{
+		   	.partTit{
+		   		width: 1.73rem;
+	  			background: url(../img/精灵title.png) no-repeat top center;
+	  		}
+		   }
+		    &.part2{
+		   	.partTit{
+		   		width: 2.09rem;
+	  			height: 0.67rem;
+	  			background: url(../img/皇家title.png) no-repeat top center;
+	  		}
+		   }
+		   &.part3{
+		   	.partTit{
+		   		width: 2.12rem;
+	  			background: url(../img/巫师title.png) no-repeat top center;
+	  		}
+		   }
+		   &.part4{
+		   	.partTit{
+		   		width: 2.35rem;
+		   		height: 0.69rem;
+	  			background: url(../img/龙族tittle.png) no-repeat top center;
+	  		}
+		   }
+		   &.part5{
+		   	.partTit{
+		   		width: 3.56rem;
+	  			background: url(../img/幻灵师title.png) no-repeat top center;
+	  		}
+		   }
+		   &.part6{
+		   	.partTit{
+		   		width: 3.27rem;
+		   		height: 0.67rem;
+	  			background: url(../img/暗夜伯爵title.png) no-repeat top center;
+	  		}
+		   }
+		   &.part7{
+		   	.partTit{
+		   		width: 2.27rem;
+		   		height: 0.67rem;
+	  			background: url(../img/主教title.png) no-repeat top center;
+	  		}
+		   }
+		   &.part8{
+		   	.partTit{
+		   		width: 2.84rem;
+	  			background: url(../img/超越者title.png) no-repeat top center;
+	  		}
+		   }
+		   &.part9{
+		   	.partTit{
+		   		width: 2.33rem;
+	  			background: url(../img/中立title.png) no-repeat top center;
+	  		}
+		   }
+	  	}
+	  }
+	  
+	  .mFooter{
+	     width: 7.5rem; 
+	     height: 3.7rem;
+	     background: url(../img/mFooter.png) no-repeat top center;
+	     margin: 0 auto;
+	     position: relative;
+	     .mf_yzs{
+	      width: 0.93rem;
+	      height: 0.39rem;
+	      background: url(../img/mf_yzs.png) no-repeat top center;
+	      position: absolute;
+	      left: 50%;
+	      margin-left: -0.465rem;
+	      top:0.85rem;
+	     }
+	     .mf_txt{
+	      color:#fff;
+	      font-size: 0.24rem;
+	      width: 100%;
+	      text-align: center;
+	      position: absolute;
+	      &.mf_txt1{
+	        top:1.475rem;
+	      }
+	      &.mf_txt2{
+	        bottom: 1.475rem;
+	      }
+	     }
+	  }
+
+
+	}
+
+	.jsjsPop{
+  	  width: 100%;
+	  height: 100%;
+	  overflow-y:auto;  
+	  background: rgba(0,0,0,0.8);
+	  z-index: 9999;
+	  margin-top:-1rem; 
+	  visibility: hidden; 
+	  .animation(all 0.5s ease-in-out);
+	  .closePop{
+	  	display: block;
+	    width: 0.95rem;
+        height:0.74rem;
+        float: right;
+	    background: url(../img/menu_hv.png) no-repeat center;
+	  }
+	   		.swiper-container {
+			      width:100%;
+			      height: 95%;
+			      overflow: auto;	      
+			    .swiper-slide {
+			      text-align:center;
+			      font-size:0.24rem;
+			      display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;
+			      -webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;
+			      -webkit-box-align:center;-ms-flex-align:center;
+					img{
+						margin-top:1.5rem; 
+						display: block;
+			      		width: 3.3rem;
+			      		height: 4.4rem;
+			      	}
+			      
+
+			      .slideGroup{
+			      	color:#dcdcdc;
+			      	text-align: left;
+			      	.popImg2{	
+			      		height: 6rem;
+				      	img{
+				      		float: left;
+				      		&.popImg2f{
+				      			margin-right: 0.25rem;
+				      		}
+				      	}
+				    }
+			        .popImg1{
+			        	height: 6rem;
+				      	img{
+				      		position: relative;
+				      		left:50%;
+				      		margin-left: -1.65rem;
+				      	}
+				    } 
+				    .sGtoken{
+				    	width: 1rem;
+				    	height: 0.6rem;
+				    	line-height: 0.6rem;
+				    	font-size: 0.3rem;
+				    }
+				    .sGTitle{
+				    	font-size: 0.36rem;
+				    	font-weight: bold;
+						height: 0.5rem;
+						line-height: 0.5rem;
+				    }
+				    .sGcv{
+				    	span{
+				    		margin-right: 0.4rem;
+				    	}	
+				    }
+				    .sGp{
+				    	margin: 0.2rem 0 ;
+				    	padding-left: 0.2rem;
+				    }
+				    .sGjbxx{
+				    	span{
+				    		display: inline-block;
+				    		width: 24%;
+				    		height: 0.45rem;
+				    		line-height: 0.45rem;
+				    	}
+				    }
+				    .sGjhq,.sGjhh{
+				    	p{
+				    		line-height: 0.35rem;
+				    	}
+				    }
+
+			      }
+			    }
+
+			    .swiper-button-prev {
+		    	  position: fixed;
+			      width: .47rem;
+			      height: 1.22rem;
+			      background: url(../img/arrow-left.png) no-repeat;
+			      left:0;
+			      top:4rem;
+			    }
+			    .swiper-button-next {
+			      position: fixed;
+			      width: .47rem;
+			      height: 1.22rem;
+			      background: url(../img/arrow-right.png) no-repeat;
+			      right:0;
+			      top:4rem;
+			    }
+			    .swiper-button-disabled{
+			    	opacity: 0;
+			    }
+		   }
+	}
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .menuItem { border-right: 0.5px solid #dbd9d9; border-right:0.5px solid #dbd9d9; }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 3) {
+    .menuItem { border-right: 0.33333px solid #dbd9d9; border-right:0.33333px solid #dbd9d9; }
+}

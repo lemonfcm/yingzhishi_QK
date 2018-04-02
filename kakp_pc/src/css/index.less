@@ -1,0 +1,371 @@
+@import "_reset.less";
+@import "_common.less";
+
+.wrapper {
+	width: 100%;
+	min-width: 1200px;
+	background-color: #16112c;
+  .navWrapper{
+		width: 100%;
+		height: 1126px;
+		background: url(../img/bgImage.png) no-repeat  top center ;
+		.logo{
+		  width: 220px;
+		  height:195px;
+		  background: url(../img/logo.png) no-repeat  top center ;
+		  top:0;
+		  left:50%;
+		  margin-left: -526px;
+		}
+		.topNav{
+		  width: 540px; 
+		  top:0;
+		  left:50%;
+		  margin-left:0 ;
+		  font-size: 0;
+		  .navLi{
+		    display: inline-block;
+		    .navA{
+		      display: block;
+		      width: 41px;
+		      height:112px;
+		      margin-right: 12px;
+		      &.navA1{
+		        background: url(../img/nav_sy.png) no-repeat  top center ;
+		        &:hover{background: url(../img/nav_sy_hv.png) no-repeat  top center ;}
+		      }
+		      &.navA2{
+		        background: url(../img/nav_zx.png) no-repeat  top center ;
+		        &:hover{background: url(../img/nav_zx_hv.png) no-repeat  top center ;}
+		      }
+		      &.navA3{
+		        background: url(../img/nav_sjg.png) no-repeat  top center ;
+		        &:hover{background: url(../img/nav_sjg_hv.png) no-repeat  top center ;}
+		      }
+		      &.navA4{
+		        background: url(../img/nav_zjjs.png) no-repeat  top center ;
+		        &:hover{background: url(../img/nav_zjjs_hv.png) no-repeat  top center ;}
+		      }
+		      &.navA5{
+		        background: url(../img/nav_yxts.png) no-repeat  top center ;
+		        &:hover{background: url(../img/nav_yxts_hv.png) no-repeat  top center ;}
+		      }
+		      &.navA6{
+		        background: url(../img/nav_yxdm.png) no-repeat  top center ;
+		        &:hover{background: url(../img/nav_yxdm_hv.png) no-repeat  top center ;}
+		      }
+		      &.navA7{
+		        background: url(../img/nav_zxkb.png) no-repeat  top center ;
+		        &:hover{background: url(../img/nav_zxkb_hv.png) no-repeat  top center ;}
+		      }
+		      &.navA8{
+		        background: url(../img/nav_gzh.png) no-repeat  top center ;
+		        cursor: default;
+		        //&:hover{background: url(../img/nav_gzh_hv.png) no-repeat  top center ;}
+		      }
+		      
+		    }
+		    .gzhImg{
+		      width: 100px;
+		      height: 100px;
+		      background: url(../img/weixin_gzh.jpg) no-repeat top center ;
+		      background-size: 100px 100px;
+		      z-index: 999;
+		      top:50px;
+		      left:-20px;
+		      display: none;
+		    }
+		    .weixinWrapper{
+		      top:1px;
+		      left:30px;
+		       .weixin{
+		        display: block;
+		        width: 48px;
+		        height: 49px;
+		        background: url(../img/weixin.png) no-repeat   center ;
+		        }
+		      &:hover{
+		        .weixin{
+		          background: url(../img/weixin_hv.png) no-repeat  top center ;
+		        }
+		        .gzhImg{
+		          display: block;
+		        }
+		      }
+		    }
+		    .xinlangWrapper{
+		      top:1px;
+		      left:60px;
+		       .xinlang{
+		        display: block;
+		        width: 48px;
+		        height: 49px;
+		        background: url(../img/xinlang.png) no-repeat   center ;
+		        }
+		       &:hover{
+		        .xinlang{
+		          background: url(../img/weixin_hv.png) no-repeat  top center ;
+		        }
+		        .gzhImg{
+		          display: block;
+		        }
+		      }
+		    }
+
+		    
+		    
+		  }
+		}
+
+  }
+
+  .pcIndex{
+    color:#fff;
+    font-size: 12px;
+    line-height: 36px;
+    width: 1020px;
+    margin:0 auto;
+    margin-top:-715px;
+    z-index: 100;
+    a{
+      color:#fff;
+    }
+  }
+
+  .main{
+    width: 1020px;
+    margin:0 auto;
+    color:#fff;
+    background-color: rgba(9,15,20,0.55);
+	.skzs{
+		height: 385px;
+		.skzsTitle{
+			width: 374px;
+			height: 121px;
+			left:64px;
+		}
+		.skzsText{
+			width: 380px;
+			height: 260px;
+			padding: 0 15px;
+			font-size: 14px;
+			line-height: 24px;
+			left:64px;
+			top:125px;
+			text-align: left;
+			overflow: hidden;
+			.skzsP{
+				margin-top: 25px;
+				&.skzsP1{
+					margin-top: 0;
+				}
+			}
+		}
+		.skzsVideo{
+			width: 451px;
+			height: 264px;
+			background: url(../img/skzsVideo.png) no-repeat  center ;
+			top:30px;
+			right: 70px;
+		}
+
+	}
+	.kpjs{
+		margin-top: 75px;
+		height: 335px;
+		.kpjsLine{
+			width: 935px;
+			height: 1px;
+			margin: 0 auto;
+			background:  url(../img/kpjsLine.png) no-repeat  top center ;
+		}
+		.kpjs_girl{
+			width: 1264px;
+			height: 559px;
+			background:  url(../img/kpjs_girl.png) no-repeat  top center ;
+			top:-110px;
+			left:-145px;
+			z-index: 0;
+		}
+		.kpjs_title{
+			width: 484px;
+			height:73px;
+			background:  url(../img/kpjsTitle.png) no-repeat  top center ;
+			margin: 40px auto 0;
+		}
+		.kpjs_txt{
+			text-align: center;
+			font-size: 14px;
+			line-height: 24px;
+			color:#86858d;
+		}
+		.kpjs_pic{
+			width: 890px;
+			height: 88px;
+			margin: 45px auto 0;
+			font-size: 0;
+			z-index: 100;
+			li{
+				display: inline-block;
+				margin-right: 10px;
+				&:last-of-type{
+					margin-right: 0;
+				}
+				opacity: 0.6;
+				.kpjs-img{
+					display: block;
+					width: 90px;
+					height:60px;
+					&.kpjs-img1{
+						background:  url(../img/elfOn.png) no-repeat  top center ;
+					}
+					&.kpjs-img2{
+						background:  url(../img/royalOn.png) no-repeat  top center ;
+					}
+					&.kpjs-img3{
+						background:  url(../img/witchOn.png) no-repeat  top center ;
+					}
+					&.kpjs-img4{
+						background:  url(../img/dragonOn.png) no-repeat  top center ;
+					}
+					&.kpjs-img5{
+						background:  url(../img/necromancerOn.png) no-repeat  top center ;
+					}
+					&.kpjs-img6{
+						background:  url(../img/vampireOn.png) no-repeat  top center ;
+					}
+					&.kpjs-img7{
+						background:  url(../img/bishopOn.png) no-repeat  top center ;
+					}
+					&.kpjs-img8{
+						background:  url(../img/nemesisOn.png) no-repeat  top center ;
+					}
+					&.kpjs-img9{
+						background:  url(../img/neutralOn.png) no-repeat  top center ;
+					}
+
+				}
+				.kpjs_fl{
+					font-size: 14px;
+					text-align: center;
+					margin-top: 8px;
+					color:#f9f9f9;
+				}
+
+				&:hover{
+					opacity: 1;
+				}
+			}
+		}
+	}
+    .cardsFooter{
+      width: 100%;
+      height: 305px;
+      margin: 28px auto;
+      background:  url(../img/cardsFooter.png) no-repeat  top center ;
+      .footerImgs{
+        width: 332px;
+        height: 152px;
+        left:50%;
+        top:50%;
+        margin-left: -181px;
+        margin-top: -10px;
+        .saoyisao{
+          width: 120px;
+          height:134px;
+          background:  url(../img/saoyisao.png) no-repeat  top center ;
+          padding: 5px 4px 5px 13px;
+          .ewm{
+            width: 109px;
+            height: 109px;
+            background:  url(../img/ewm.png) no-repeat  top center ;
+          }
+          .sysLine{
+            width: 114px;
+            height: 12px;
+            background:  url(../img/line.png) no-repeat  top center ;
+            top:0;
+            left:9px;
+            .animation(line 3s ease-out alternate infinite);
+          }
+        }
+        .ios,.android{
+          width: 200px;
+          height: 60px;
+          background:  url(../img/ios.png) no-repeat  top center ;
+          left:140px;
+          top:5px;
+        }
+        .android{
+          background:  url(../img/andriod.png) no-repeat  top center ;
+          top:70px;
+        }
+      }
+    }
+  }
+
+}
+
+.backToTop{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 20px;
+  bottom: 260px;
+  background:  url(../img/backToTop.png) no-repeat  top center ;
+  display: none;
+}
+.share-wrap{
+   width: 100%;
+   min-width  : 1100px;
+   background : #000;
+   color: #fff;
+   text-align: center;
+   margin-top: -30px;
+   padding-top: 25px;
+  /*  margin-bottom: -8px; */
+   .NIE-share{
+            .NIE-share-txt {
+            margin-right: 10px;
+            }
+            .NIE-share-iconBtn{
+              li{
+                 a{
+                    width: 85px;
+                    color: #fff !important;
+                    margin-right: 10px;
+                    &:hover{
+                      color: #fff !important;
+                    }
+                    span{
+                    margin-right: 5px;
+                    }
+                  }
+
+                  &:nth-of-type(1),&:nth-of-type(2),&:last-of-type{
+                    a{
+                      width: 55px;
+                    }
+                  }
+                   &:nth-of-type(4){
+                    a{
+                      width: 70px;
+                    }
+                  }
+              }
+             
+            }
+          }
+}
+#tpl .copyRightWrapper{
+  width: 100%;
+  min-width  : 1100px;
+  height: 100px;
+  #NIE-copyRight {
+ // min-width  : 1100px;
+  padding    : 10px 0 20px;
+  color      : #eee;
+  background : #000;
+  a { color: #eee; text-decoration: none; }
+}
+}
